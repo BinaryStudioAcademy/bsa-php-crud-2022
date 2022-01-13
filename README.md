@@ -1,7 +1,7 @@
 # Binary Studio Academy 2022
 ## Домашнее задание ([ua](README_UA.md))
 
-###1. Установка:
+### 1. Установка:
 ```bash
 git clone https://github.com/BinaryStudioAcademy/bsa-php-crud-2022.git
 cd bsa-php-crud-2022
@@ -14,11 +14,11 @@ docker-compose up -d
  - php >= 7.4
  - создайте БД MySQL (MariaDB) в соответствии с конфинурацией .env
 
-###2. Запустите миграции и заполните БД начальными данными:
+### 2. Запустите миграции и заполните БД начальными данными:
 ```bash
 php artisan migrate --seed
 ```
-###3. Добавьте следующие models и relations:
+### 3. Добавьте следующие models и relations:
     - Product `[id, date, orderItems, buyer]`
     - OrderItem `[id, order, product, quantity, price, discount (%), sum (price x discount x quantity)]`
     - Buyer `[id, name, surname, country, city, addressLine, phone, orders]`
@@ -29,11 +29,11 @@ php artisan migrate --seed
     
     *все цены должны быть сохранены в копейках - 5 грн => 500 в базе данных*
 
-###4. Создайте factories для моделей **Order, OrderDetail, Buyer**, используя Faker
+### 4. Создайте factories для моделей **Order, OrderDetail, Buyer**, используя Faker
 
-###5. Создайте seeders для создания Order c OrderItems и Buyer, используя factories и уже существующие в БД Products
+### 5. Создайте seeders для создания Order c OrderItems и Buyer, используя factories и уже существующие в БД Products
 
-###6. Добавьте CRUD endpoints (API routes and controller actions) для модели Order
+### 6. Добавьте CRUD endpoints (API routes and controller actions) для модели Order
 
 - create order:
 ```
@@ -62,7 +62,7 @@ PUT: {
 }
 ```
 
-###7. Для поиска Order по ID и возврата коллекции Order создайте resource presenters (см. Laravel: Eloquent API Resource) и их коллекции: 
+### 7. Для поиска Order по ID и возврата коллекции Order создайте resource presenters (см. Laravel: Eloquent API Resource) и их коллекции: 
 ```
 { 
     data: {
