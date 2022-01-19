@@ -1,5 +1,5 @@
 # Binary Studio Academy 2022
-## Домашнє завдання ([ua](README_UA.md))
+## Домашнє завдання ([ru](README.md))
 
 ### 1. Інсталяція
 ```bash
