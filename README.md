@@ -19,7 +19,7 @@ docker-compose up -d
 php artisan migrate --seed
 ```
 ### 3. Добавьте следующие models и relations:
-    - Product `[id, date, orderItems, buyer]`
+    - Order `[id, date, orderItems, buyer]`
     - OrderItem `[id, order, product, quantity, price, discount (%), sum (price x discount x quantity)]`
     - Buyer `[id, name, surname, country, city, addressLine, phone, orders]`
     
